@@ -1,10 +1,8 @@
 var queryURL = "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geojson"
 
-//  get request for quake data
 d3.json(queryURL, function(data){
    var earthquakeData = data.features
 
-    // save quake layer made from geojson, 
    var quakes = L.geoJSON(earthquakeData, {
     pointToLayer: function (feature, latlng) {
         return new L.circle(latlng, 
