@@ -1,12 +1,40 @@
-/* remove default margin and padding from body */
-body {
-  padding: 0;
-  margin: 0;
+html{
+  background-color:gray;
+}
+body{
+  background-color: gray;
 }
 
-/* set map, body, and html to 100% of the screen size */
-#map,
-body,
-html {
-  height: 100%;
+
+.panel > .panel-heading {
+  background-image: none;
+  background-color: black;
+  color: white;
+  text-align: center;
+
+}
+
+#map-section{
+  height: 800px;
+}
+
+.legend {
+  line-height: 18px;
+  color: white;
+  background-color: rgb(86, 86, 86);
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.legend i {
+  width: 18px;
+  height: 18px;
+  float: left;
+  margin-right: 10px;
+  opacity: 0.5;
+}
+
+
+.leaflet-popup-content {
+  text-align: center;
 }
